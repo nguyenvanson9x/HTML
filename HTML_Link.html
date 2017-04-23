@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML Link</title>
+  <meta charset="UTF-8">
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
+  <style>
+    p {
+      font-size: 300%;
+    }
+    a:link {
+      color: green;
+      background-color: transparent;
+      text-decoration: none;
+    }
+    
+    a:visited {
+      color: pink;
+    }
+    
+    a:hover {
+      color: red;
+    }
+    
+    a:active {
+      color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="HTTP_CSS.html">Link text aaabb</a>
+  <p><a href="#C4">Jump to Chapter 4</a></p>
+  <h2>Chapter 1</h2>
+  <p>This chapter explains blala</p>
+
+  <h2>Chapter 2</h2>
+  <p>This chapter explains lbllblb</p>
+
+  <h2 id="C4">Chapter 4</h2>
+  <p>This chapter explains blalala</p>
+</body>
+
+</html>
