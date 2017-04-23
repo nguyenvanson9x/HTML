@@ -1,6 +1,17 @@
 h2 {
-    color: seagreen;
+    color: blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 300%;
-    border: 1px solid powderblue;
+    border: 1px solid red;
+    padding: 30px;
+    margin: 10px;
+}
+#h2_01 {
+    color: red;
+}
+h2.another {
+    color: green;
+}
+h1.another {
+    color: gray;
 }

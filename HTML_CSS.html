@@ -5,6 +5,9 @@
   <title>HTML CSS</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="" href="styles.css">
+  <script>
+    document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+  </script>
 </head>
 <style>
   body {
@@ -24,11 +27,25 @@
   <!--Inline CSS-->
   <h1 style="color:green">This is a green heading</h1>
   <!-- Internal CSS-->
-  <h1>This is a blue heading</h1>
+  <h1>This is a blue NVS</h1>
   <p>This is a paragraph</p>
   <!--External CSS-->
   <h2>This is a SeaGreen heading</h2>
-
+  <h2 id="h2_01">This is an another heading</h2>
+  <h2 class="another">This is an another heading 2</h2>
+  <h1 class="another">This is an another heading 2</h1>
 </body>
 
 </html>
+<!--
+Use the HTML style attribute for inline styling
+Use the HTML <style> element to define internal CSS
+Use the HTML <link> element to refer to an external CSS file
+Use the HTML <head> element to store <style> and <link> elements
+Use the CSS color property for text colors
+Use the CSS font-family property for text fonts
+Use the CSS font-size property for text sizes
+Use the CSS border property for borders
+Use the CSS padding property for space inside the border
+Use the CSS margin property for space outside the border
+-->
