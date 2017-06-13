@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <form id="frm1">
+    First name: <input type="text" name="fname" value="Donald"><br> 
+    Last name: <input type="text" name="lname" value="Duck"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction() {
+      var x = document.forms["frm1"];
+      var text = "";
+      var i;
+      for (i = 0; i < x.length; i++)
+        text += x.elements[i].value + "<br>";
+      document.getElementById("demo").innerHTML = text;
+      document.getElementById("demo").style.color = "blue";
+    }
+  </script>
+</body>
+
+</html>
