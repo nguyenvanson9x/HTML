@@ -13,7 +13,7 @@
     Last name: <input type="text" name="lname" value="Duck"><br>
     <input type="submit" value="Submit">
   </form>
-  <button onclick="myFunction()">Try it</button>
+  <button id="btn" onclick="myFunction()">Try it</button>
   <p id="demo"></p>
   <p id="z">Z</p>
 
@@ -44,7 +44,10 @@
       function demo() {
         z.innerHTML = "OK" + window.location.href;
       }
-      
+      y.addEventListener("click", goBack);
+      function goBack() {
+        window.history.back();
+      }
     }
   </script>
 </body>
