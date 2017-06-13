@@ -15,16 +15,36 @@
   </form>
   <button onclick="myFunction()">Try it</button>
   <p id="demo"></p>
+  <p id="z">Z</p>
 
   <script>
     function myFunction() {
       var x = document.forms["frm1"];
+      var y = document.getElementById("demo");
+      var z = document.getElementById("z");
       var text = "";
       var i;
       for (i = 0; i < x.length; i++)
         text += x.elements[i].value + "<br>";
-      document.getElementById("demo").innerHTML = text;
-      document.getElementById("demo").style.color = "blue";
+      y.innerHTML = text;
+      y.style.color = "red";
+
+      var pos = 0;
+      var id = setInterval(frame, 5);
+      function frame() {
+        if (pos == 350)
+          clearInterval(id);
+          else {
+            pos++;
+            y.style.top = pos + 'px';
+            y.style.left = pos + 'px';
+          }
+      }
+      z.addEventListener("mouseover", demo);
+      function demo() {
+        z.innerHTML = "OK" + window.location.href;
+      }
+      
     }
   </script>
 </body>
