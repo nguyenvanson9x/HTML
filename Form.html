@@ -14,6 +14,8 @@
 			border: 1px solid #ccc;
 			border-radius: 4px;
 			box-sizing: border-box;
+			-webkit-transition: width 0.4s ease-in-out;
+			transition: width 0.4s ease-in-out;
 		}
 		input[type=submit] {
 			width: 100%;
@@ -32,6 +34,10 @@
 			background-color: #f2f2f2;
 			padding: 20px;
 		}
+
+		input[type=text]:focus {
+			width: 100%;
+		}
 	</style>
 </head>
 
@@ -48,6 +54,7 @@
 				<option value="canada">Canada</option>
 				<option value="usa">USA</option>
 			</select>
+			<input type="text" name="search" id="sr" placeholder="Search">
 			<input type="submit" value="Submit">
 		</form>
 	</div>
